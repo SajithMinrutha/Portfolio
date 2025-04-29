@@ -1,7 +1,8 @@
-import AboutMe from "@/components/AboutMe";
+import AboutMe from "../components/AboutMe";
 import LandingPage from "../components/LandingPage";
 import NavBar from "../components/NavBar";
-import Education from "@/components/Education";
+import Education from "../components/Education";
+import Skills from "../components/Skills";
 export default function Home() {
   return (
     <main>
@@ -9,6 +10,7 @@ export default function Home() {
       <LandingPage />
       <AboutMe />
       <Education />
+      <Skills />
     </main>
   );
 }
