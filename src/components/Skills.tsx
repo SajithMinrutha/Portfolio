@@ -20,7 +20,7 @@ function Skills() {
     { name: "FIREBASE", image: "/firebase-original.svg" },
     { name: "EXPRESS JS", image: "/express-original.svg" },
     { name: "NODE JS", image: "/nodejs-original.svg" },
-    { name: "ZUSTAND", image: "/zustand-original.svg" },
+    { name: "ZUSTAND", image: "/zustand.svg" },
     { name: "HTML", image: "/html5-original.svg" },
     { name: "CSS", image: "/css3-original.svg" },
     { name: "TAILWIND CSS", image: "/tailwindcss-original.svg" },
@@ -34,7 +34,7 @@ function Skills() {
   return (
     <>
       <div className="default-flex flex-col my-5">
-        <h1 className="text-3xl font-mono">Skills</h1>
+        <h1 className="text-3xl font-secondary">Skills</h1>
         <div className="grid grid-cols-4 gap-4 mt-5 flex-grow">
           {skills.map((skill, index) => {
             return (

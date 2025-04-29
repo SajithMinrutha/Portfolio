@@ -5,7 +5,7 @@ import Education from "../components/Education";
 import Skills from "../components/Skills";
 export default function Home() {
   return (
-    <main>
+    <main className="w-full h-full overflow-hidden">
       <NavBar />
       <LandingPage />
       <AboutMe />
