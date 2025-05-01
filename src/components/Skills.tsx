@@ -5,6 +5,7 @@ function Skills() {
     name: string;
     image: string;
   };
+
   const skills: Skill[] = [
     { name: "REACT JS", image: "/react-original.svg" },
     { name: "JAVASCRIPT", image: "/javascript-original.svg" },
@@ -32,24 +33,20 @@ function Skills() {
   ];
 
   return (
-    <>
-      <div className="default-flex flex-col my-5">
-        <h1 className="text-3xl font-secondary">Skills</h1>
-        <div className="grid grid-cols-4 gap-4 mt-5 flex-grow">
-          {skills.map((skill, index) => {
-            return (
-              <div
-                key={index}
-                className="flex flex-col justify-center items-center gap-5 w-50  mt-10"
-              >
-                <Image src={skill.image} width={80} height={80} alt="image" />
-                <h3>{skill.name}</h3>
-              </div>
-            );
-          })}
-        </div>
+    <div className="grid grid-cols-1 justify-items-center items-center mt-10">
+      <h1 className="text-3xl font-secondary">Skills</h1>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-10 mt-10">
+        {skills.map((skill, index) => (
+          <div
+            key={index}
+            className="flex flex-col justify-center items-center gap-3"
+          >
+            <Image src={skill.image} width={80} height={80} alt={skill.name} />
+            <h3 className="text-center text-sm sm:text-base">{skill.name}</h3>
+          </div>
+        ))}
       </div>
-    </>
+    </div>
   );
 }
 
